@@ -1,0 +1,206 @@
+html,body{
+    max-width:100%;
+    overflow-x:hidden;
+    background-color:#000000;
+    color:white;
+    font-family: 'Source Code Pro', monospace;
+    margin:0px;
+
+}
+.navigation-container{
+    width:100%;
+    height:20vh;
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    
+    align-items: center;
+    justify-content: space-around;
+    background-color:#000000;
+    padding:10px;
+}
+.header-logo img{
+    width:75%;
+    height:75%
+}
+.header-logo{
+height:25vh;
+}
+.navigation-container li{
+    text-decoration:none;
+    display:inline;
+    margin:40px;
+    
+    
+}
+.navigation-container li a{
+    text-decoration :none;
+    color:white;
+    margin:1px;
+    
+    padding:5px;
+    margin:30px;
+    font-weight:bold;
+    
+}
+.navigation-container a:hover {
+    border-color:brown;
+    border-bottom:3px solid #f1faee;
+    transition: 8s;
+    transition-property: linear;
+}
+
+.banner-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+    width:100%;
+    height:60vh;
+    
+}
+    
+.banner-image{
+    grid-column:1/4;
+    grid-row:1/4;
+    width:100vw;
+    height:60vh;
+    background-image:url('../images/markus-spiske-hvSr_CVecVI-unsplash.jpg');
+    background-size: cover;
+    
+    
+}
+.banner-heading{
+    grid-column:2/3;
+    grid-row:2/3;
+    color:white;
+    font-weight: 500;
+
+
+
+}
+.banner-heading h1{
+    font-weight: bold;
+    font-size:300%
+
+}
+.main-content{
+    background-image: url();
+    background-size: cover;
+    display:flex;
+   flex-direction:row;
+   justify-content: space-evenly;
+   justify-items: center;
+  
+    width:100%;
+    height:70vh;
+    
+    
+}
+
+.main-heading{
+    width:100%;
+    height:auto;
+    margin:auto;
+    
+    
+
+
+}
+.main-content{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+.main-content a{
+    text-decoration:none;
+    color:white;
+}
+hr{
+    color:black;
+}
+    
+    
+
+
+}
+.main-content h1{
+    width:100%;
+    font-weight:bold;
+    margin:auto;
+    
+}
+.main-content p{
+    font-weight:bold;
+    
+}
+.footer-container{
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-content: center;
+}
+.f-element2 a{
+    text-decoration:none;
+    color:white;
+    margin:10px;
+}
+.f-element2 li{
+    text-decoration:none;
+    display:inline;
+}
+@media only screen and (max-width:1141px){
+    .body{
+        width:100%;
+        margin:0%;
+    }
+
+    .navigation-container{
+        flex-direction:column;
+        justify-content: space-around;
+        height:100vh;
+        width: 100%;
+        flex-wrap:no;
+        text-align:center;
+        margin:40px;
+    }
+    .navigation-bar{
+        width:100%;
+    }
+    .navigation-bar .list{
+        width: 70%;
+    padding-left: 30%;
+    }
+    .navigation-items {
+        display: block;
+        text-decoration: none;
+        color: white;
+    
+        margin-left: 0vw;
+    
+        width: 40%;
+        text-align: center;
+      }
+      /*.navigation-item {
+        margin-top: 3vh;
+    
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 20%;
+      }*/
+      .footer-container{
+          flex-direction:column;
+          justify-items: center;
+      }
+      .main-content{
+          flex-direction:column;
+      }
+      .list{
+          display:flex;
+          flex-direction:column;
+          justify-content: space-evenly;
+          justify-items: center;
+          align-items: center;
+      }
+}
